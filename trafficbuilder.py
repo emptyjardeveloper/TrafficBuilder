@@ -74,7 +74,7 @@ def core_engine(iteration, proxy):
     user_agent  = get_random_user_agent()
     url         = get_random_url()
     
-    options = create_chrome_option_profile(user_agent, proxy, "user-lu8652689", "6EIarx")
+    options = create_chrome_option_profile(user_agent, proxy, "username", "password")
     
     driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=options)
     driver.get(url) 
